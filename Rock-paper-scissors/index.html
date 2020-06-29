@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="imgs/evilComputerReady.png" type="image/jpg" sizes="16x16">
+        <link rel="stylesheet" href="styles.css">
+    
+        <title>Rock-Paper-Scissors Game</title>
+        <script type="module" src="dist/app.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <h1>Rock-Paper-Scissors Game</h1>
+        </header>
+
+        <div class="game">
+            <div class="battle">
+                <img class="user-choice" id="userchoice" width="200px" height="200px" src="imgs/chooseAnOption.png" alt="" />
+                <img class="computer-animation" id="computeranimation" width="100px" height="100px" src="imgs/evilComputerHappy.png" alt="" />
+                <img class="enemy-choice" id="enemychoice" width="200px" height="200px" src="imgs/evilComputerReady.png" alt="" />
+            </div>
+        
+            <div class="score">
+                <div class="player-life-points">
+                    <h2>Your life points</h2>
+                    <p id="user-life-points">10</p>
+                </div>
+
+                <div class="result">
+                    <h2 id="result">...</h2>
+                </div>
+
+                <div class="enemy-life-points">
+                    <h2>Computer's life points</h2>
+                    <p id="enemy-life-points">10</p>
+                </div>
+            </div>
+
+            <div class="choices">
+                <div class="choice">
+                    <img src="imgs/rock.png" alt="" id="rock">
+                </div>
+                <div class="choice">
+                    <img src="imgs/paper.png" alt="" id="paper">
+                </div>
+                <div class="choice">
+                    <img src="imgs/scissors.png" alt="" id="scissors">
+                </div>
+            </div>
+
+             
+            <div class="playAgain">
+                <img src="imgs/playAgain.png" alt="" id="play-again" hidden>
+            </div>
+        </div>
+        
+    </body>
+</html>

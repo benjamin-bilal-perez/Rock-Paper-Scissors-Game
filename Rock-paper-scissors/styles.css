@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(183, 216, 171);
+    font-family: "Times New Roman", Times, serif;
+}
+
+img {
+    border-radius: 10%;
+}
+
+.header {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.result {
+    text-align: center;
+    image-resolution: 100px;
+}
+
+.battle {
+    display: flex;
+    justify-content: space-around;
+}
+
+.score {
+    color: rgb(57, 20, 223);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.score h2 {
+    font-size: 30px;
+}
+.score p {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.playAgain,
+.choices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.playAgain img:hover,
+.choice img:hover {
+    filter: opacity(70%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+@keyframes enemy-normal-animation {
+    0% {
+        transform:rotate(0deg)
+                  translate(-65px)
+                  rotate(0deg);
+      }
+      100% {
+        transform:rotate(360deg)
+                  translate(-65px)
+                  rotate(-360deg);
+      }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
