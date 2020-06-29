@@ -1,2 +1,2 @@
 # Rock-Paper-Scissors-Game
-A simple rock, paper, scissors game made with typescript
+A simple rock, paper, scissors game made with TypeScript
